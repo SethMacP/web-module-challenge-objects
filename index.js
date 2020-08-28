@@ -163,13 +163,24 @@ function getLastReview(reviews) {
     {name:"Lauren", rating: 4, feedback: "Absolutely love that they have karaoke Fridays! Food and drink selection is okay."}]
 */
 
- function getReviewByRating(reviews, myRating) {
-  for (let i=0; i< reviews.length; i++){
-    
+ function getReviewByRating(arr, myRating) {
+  let myRatC = Math.ceil(myRating);
+  console.log(myRatC);
+  let myRatF = Math.floor(myRating);
+  console.log(myRatF);
+  let reviewArr = [];
+  for (let i = 0; i<arr.length; i++){
+    if (myRating >= myRatF || myRating < myRatC){
+    reviews[i].feedback.push(arr[i])
+    }
+    else {
+      return reviewArr;
+    }
   }
-  }
+}
+console.log(getReviewByRating(reviews, 4));
 
-  
+
 /** STRETCH 2: Write a function called 'getLongestReview' that returns an array containing all reviews longer than 15 words. 
   
 Your function should accept: 
@@ -206,7 +217,7 @@ The returned object should have the following characteristics:
 */
 
 
-function carMaker(/* code here */) {
-    /* code here */
+// function carMaker(/* code here */) {
+//     /* code here */
     
-}
+// }
