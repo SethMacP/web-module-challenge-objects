@@ -11,12 +11,12 @@ function createMenuItem(name, cost, category){
   let newMenuItem = {name, cost, category} 
     return newMenuItem;
 }
-console.log(createMenuItem("Taco", 14, "Lunch"));
+createMenuItem("Taco", 14, "Lunch");
 
 /* Task 1b: use your function to create 3 more menu items. You may add any items to the menu that you'd like */
-console.log(createMenuItem("Pizza", 14, "Dinner"));
-console.log(createMenuItem("Ice Cream", 6, "Dessert"));
-console.log(createMenuItem("Taco", 12, "Lunch"));
+createMenuItem("Pizza", 14, "Dinner");
+createMenuItem("Ice Cream", 6, "Dessert");
+createMenuItem("Taco", 12, "Lunch");
 
 
 /* Task 2: You're having a lunch special! 25% off for teachers and students, 10% off for everyone else. Add a method to your burger object that automatically calculates price given a string as a parameter. 
@@ -28,6 +28,11 @@ Your method should accept:
 and should return a number. 
 
 For example, burgerDiscount("teacher") would return 13.5 and burgerDiscount("public") would return 16.2*/
+
+
+//Just a reminder when I get to grading
+console.log("DONT FORGET TO ASK HOW TO USE 'this' IN ARRAYS");
+//end of reminder
 
 const discountTable = [
   {type: "teacher" , cost: 0.75 },
@@ -143,6 +148,7 @@ function getLastReview(reviews) {
 
 
 
+
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
 
 /** STRETCH 1: Write a function called `getReviewByRating` that returns an array containing all reviews in a certain range. Your function should accept: 
@@ -157,8 +163,10 @@ function getLastReview(reviews) {
     {name:"Lauren", rating: 4, feedback: "Absolutely love that they have karaoke Fridays! Food and drink selection is okay."}]
 */
 
- function getReviewByRating(/* code here */) {
-    /* code here */
+ function getReviewByRating(reviews, myRating) {
+  for (let i=0; i< reviews.length; i++){
+    
+  }
   }
 
   
